@@ -15,8 +15,8 @@
 		81EE34581491452A00132035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34571491452A00132035 /* AppDelegate.m */; };
 		81EE34631491452B00132035 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34621491452B00132035 /* HelloWorldViewController.m */; };
 		81EE34701491458B00132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE346F1491458B00132035 /* README.txt */; };
+		9D8854591CD54A1E00DA134F /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8854581CD54A1E00DA134F /* RobotKit.framework */; };
 		DE1D2C4C1A24E8E600C00924 /* HelloWorld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1D2C4B1A24E8E600C00924 /* HelloWorld.storyboard */; };
-		DE526AF71B3B4655000D6545 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526AF61B3B4655000D6545 /* RobotKit.framework */; };
 		DE53D06E19771177006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D06D19771177006E4C0B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +34,13 @@
 		81EE34611491452B00132035 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
 		81EE34621491452B00132035 /* HelloWorldViewController.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 0; };
 		81EE346F1491458B00132035 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		9D88544F1CD51A0900DA134F /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		9D8854511CD51A8A00DA134F /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		9D8854521CD51A8A00DA134F /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		9D8854531CD51A8A00DA134F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		9D8854571CD549C600DA134F /* RobotKit */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = RobotKit; sourceTree = "<group>"; };
+		9D8854581CD54A1E00DA134F /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		DE1D2C4B1A24E8E600C00924 /* HelloWorld.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelloWorld.storyboard; sourceTree = "<group>"; };
-		DE3948361A26302300F63A97 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
-		DE526AF61B3B4655000D6545 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		DE53D06D19771177006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE526AF71B3B4655000D6545 /* RobotKit.framework in Frameworks */,
+				9D8854591CD54A1E00DA134F /* RobotKit.framework in Frameworks */,
 				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
@@ -58,6 +62,8 @@
 		81EE34321491452A00132035 = {
 			isa = PBXGroup;
 			children = (
+				9D8854581CD54A1E00DA134F /* RobotKit.framework */,
+				9D8854571CD549C600DA134F /* RobotKit */,
 				DE53D06D19771177006E4C0B /* Default-568h@2x.png */,
 				81EE344D1491452A00132035 /* HelloWorld */,
 				81EE34401491452A00132035 /* Frameworks */,
@@ -76,8 +82,10 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE526AF61B3B4655000D6545 /* RobotKit.framework */,
-				DE3948361A26302300F63A97 /* RobotKit.framework */,
+				9D8854511CD51A8A00DA134F /* libstdc++.6.0.9.tbd */,
+				9D8854521CD51A8A00DA134F /* libstdc++.6.tbd */,
+				9D8854531CD51A8A00DA134F /* libstdc++.tbd */,
+				9D88544F1CD51A0900DA134F /* libc++.1.tbd */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
 				81EE344B1491452A00132035 /* ExternalAccessory.framework */,
@@ -283,19 +291,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../frameworks",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../frameworks";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-v ";
+				"PRELINK_LIBS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orbotix.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -304,19 +315,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../frameworks",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../frameworks";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-v ";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orbotix.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
